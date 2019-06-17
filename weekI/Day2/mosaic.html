@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body class="bg-white">
+    <main>
+        <div class="row">
+<!-- navigation bar starts here -->
+            <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+                    <div class="container">
+                        <a class="navbar-brand" href="#"><i class="fa fa-instagram" style="font-size:24px"></i>
+                        Instagram</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Create new post</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gear" style="font-size:24px;"></i></a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Logout</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+<!-- navigation bar ends here -->
+        </div>
+    </main>
+<!-- toggler bar starts here -->
+    <!--tu codigo aqui-->
+
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div>
+                <a href="mosaic.html" class="btn btn-light btn-lg active" role="button" aria-pressed="true">Link1</a>
+                <a href="bootstrap.html" class="btn btn-light btn-lg active" role="button" aria-pressed="true">Link0</a>
+            </div>
+        </div>
+    </div>
+
+
+<!-- toggler bar ends here -->
+
+<!--Grid view starts here-->
+<div class="container-fluid sinpadding">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="post">
+                <img src="images/12345.jpg">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="post">
+                <img src="images/lamp.jpg">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="post">
+                <img src="images/baby.jpg">
+            </div>
+        </div>
+             <div class="col-md-4">
+            <div class="post">
+                <img src="images/chick.jpg">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="post">
+                <img src="images/stock.jpg">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="post">
+                <img src="images/row-1-col-1.jpg">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="post">
+                <img src="images/row-1-col-2.jpg">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="post">
+                <img src="images/dogo-argentario.jpg">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="post">
+                <img src="images/luis.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+<!--Grid view ends here-->
+
+
+
+<!-- Begins Modal -->
+    <div class="modal " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+                                                <div class="modal-body">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            </div>
+                                                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                            </div>
+                                                </div>
+                                                <div class="modal-footer">
+
+                                                    <div class="float-left w-100">
+                                                        <i class="fa fa-camera" style="font-size:24px"></i>
+                                                        <i class="fa fa-map-marker" style="font-size:24px"></i>
+                                                    </div>
+
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                    <button type="button" class="btn btn-primary">Publish</button>
+                                                </div>
+            </div>
+        </div>
+    </div>
+<!-- End Modal-->
+
+
+<!-- some bootstrap @#$% -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

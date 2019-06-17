@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+}
+.card{
+    margin-top: 10%;
+}
+.counter{
+    float: right;
+}
+
+.post {
+    overflow: hidden;
+
+    height: 300px;
+    align-content: center;
+    text-align: center;
+    padding: 1%;
+}
+
+.post img {
+    position: relative;
+    height: 300px;
+}
+
+
+
+.sinpadding [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}

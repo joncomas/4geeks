@@ -1,0 +1,18 @@
+.submitbuttons {
+    text-align: right;
+}
+.rdbuttons {
+    text-align: left;
+}
+.txarea {
+    text-align: right;
+}
+textarea {
+    margin-right: 1px;
+    resize: block;
+    position: relative
+}
+
+.cards {
+    margin-top: 2%;
+}

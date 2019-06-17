@@ -1,0 +1,39 @@
+body {
+    background-color: white;
+}
+img{
+    width: 100%;
+}
+.logo{
+    width: 7%;
+    float: left;
+}
+
+.icono1{
+    width: 6%;
+}
+.icono2{
+    width: 6%;
+}
+.icono3{
+    width: 6%;
+}
+.icono4{
+    width: 6%;
+    float: right;
+}
+.menu{
+    width: 6%;
+    float: right;
+}
+.span{
+    vertical-align: top;
+    margin-left: 1px;
+    margin-top: 1px
+}
+
+.paragraph{
+    vertical-align: top;
+    margin-bottom: 1px;
+}
+
