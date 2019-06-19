@@ -1,0 +1,57 @@
+//let pieza; 
+//let pieza1;
+//let pieza2;
+
+//function randomIndex(){
+//    randomNum = Math.round(Math.random() *1);
+//    return randomNum;
+//}
+//function getRandomArrayIndex(myArray){
+//    randomPronoun = (myArray[randomIndex()]);
+//    return randomPronoun;
+//}
+//console.log(getRandomArrayIndex(pronoun)+" "+getRandomArrayIndex(adj)+" "+getRandomArrayIndex(noun));
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//let bigMerge = [];
+//bigMerge.push(pronoun,adj,noun);
+
+//console.log(bigMerge);
+
+ //   for(let i=0;i<pronoun.length;i++){
+ //           pieza = pronoun[i];
+ //       for(let j=0;j<adj.length;j++){
+ //           pieza1 = adj[j];
+ //           for(let k=0;k<noun;k++){
+ //               pieza2 = noun[k];    
+ //           }
+ //       }
+ //   }
