@@ -18,27 +18,42 @@ class TrafficLight extends React.Component {
 
 	render() {
 		return (
-			<div id="light">
-				<div
-					className={this.state.selected === "red" ? "selected" : ""}>
-					<div onClick={() => this.setState({ selected: "red" })}>
-						RED
+			<div className="container">
+				<div id="light">
+					<div
+						className={
+							(this.state.selected === "red" ? "selected" : "") +
+							" round red"
+						}>
+						<div onClick={() => this.setState({ selected: "red" })}>
+							RED
+						</div>
 					</div>
-				</div>
-				<div
-					className={
-						this.state.selected === "yellow" ? "selected" : ""
-					}>
-					<div onClick={() => this.setState({ selected: "yellow" })}>
-						YELLOW
+					<div
+						className={
+							(this.state.selected === "yellow"
+								? "selected"
+								: "") + " round yellow"
+						}>
+						<div
+							onClick={() =>
+								this.setState({ selected: "yellow" })
+							}>
+							YELLOW
+						</div>
 					</div>
-				</div>
-				<div
-					className={
-						this.state.selected === "green" ? "selected" : ""
-					}>
-					<div onClick={() => this.setState({ selected: "green" })}>
-						GREEN
+					<div
+						className={
+							(this.state.selected === "green"
+								? "selected"
+								: "") + " round green"
+						}>
+						<div
+							onClick={() =>
+								this.setState({ selected: "green" })
+							}>
+							<div ClassName="text">GREEN</div>
+						</div>
 					</div>
 				</div>
 			</div>

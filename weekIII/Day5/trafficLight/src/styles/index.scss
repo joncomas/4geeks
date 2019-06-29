@@ -1,15 +1,46 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 
-#light{
+.container {
+    text-align: center;
+}
+
+
+.round {
+    -webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+border-radius: 100%;
+width: 30%;
+height: 40%;
+}
+
+.red {
+background: red;
+}
+
+.yellow {
+
+background: yellow;
+}
+
+.green {
+background: green;
+}
+
+.container {
+    background: black;
+}
+
+#light {
     font-size: 100px;
 }
 
 
-.selected{
-        color: white;
-        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+.selected {
+     
+        box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 1);
       }
+
 
 
 
