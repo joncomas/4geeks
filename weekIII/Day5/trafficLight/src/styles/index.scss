@@ -1,5 +1,20 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+
+#light{
+    font-size: 100px;
+}
+
+
+.selected{
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      }
+
+
+
+
+
 /* 
 
     You can write your own styles here...
