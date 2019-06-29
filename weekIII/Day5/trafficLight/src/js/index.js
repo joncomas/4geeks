@@ -26,7 +26,7 @@ class TrafficLight extends React.Component {
 							" round red"
 						}>
 						<div onClick={() => this.setState({ selected: "red" })}>
-							RED
+							r
 						</div>
 					</div>
 					<div
@@ -39,7 +39,7 @@ class TrafficLight extends React.Component {
 							onClick={() =>
 								this.setState({ selected: "yellow" })
 							}>
-							YELLOW
+							y
 						</div>
 					</div>
 					<div
@@ -52,7 +52,7 @@ class TrafficLight extends React.Component {
 							onClick={() =>
 								this.setState({ selected: "green" })
 							}>
-							<div ClassName="text">GREEN</div>
+							<div ClassName="text">g</div>
 						</div>
 					</div>
 				</div>
