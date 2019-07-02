@@ -1,0 +1,14 @@
+
+body {
+  background-color: black;
+}
+
+.App {
+  width: 50%;
+  overflow: auto;
+}
+.tFooter {
+  background-color:  #595959;
+}
+
+  
