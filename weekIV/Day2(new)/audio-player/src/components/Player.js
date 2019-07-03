@@ -4,18 +4,18 @@ export class Player extends React.Component {
     render() {
         return this.props.players.map((player) => (
             
-            <tbody>
+            
                 <tr key={player.id} >
                     <td>{player.id}</td>
                     <td>{player.name}</td>
                     <td>{player.category}</td>
                     <td>
-                    <audio>
+                    <audio controls>
                         <source src={player.url} type="audio/mpeg"></source>
                     </audio>
                     </td>
                 </tr>
-            </tbody>    
+              
         ));
     }
 }
