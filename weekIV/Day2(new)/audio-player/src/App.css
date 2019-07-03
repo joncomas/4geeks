@@ -1,6 +1,9 @@
-
+/*
+Este css se entiende poh.
+*/
 body {
-  background-color: black;
+  background-color:black;
+  margin-bottom: 200px; 
 }
 
 .App {
@@ -15,3 +18,19 @@ body {
 
 }
   
+.iframex {
+  margin: 0 auto;
+}
+
+.container {
+    border: none;
+    padding: 5px;
+    width: 500px;
+    height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.peo {
+  text-align: center;
+}
+
