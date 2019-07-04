@@ -14,13 +14,17 @@ export class App extends React.Component {
     this.state = {
       player: [],
       selection: 0,
-      reproducir: false
+      reproducir: false,
+      clicking: false,
+      trselected: false
     }
 
     //Estos son binders para poder usar las referencias creadas arriba.
     this.PlayMusic = this.PlayMusic.bind(this);
     this.PlayMusicBack = this.PlayMusicBack.bind(this);
     this.PlayMusicNext = this.PlayMusicNext.bind(this);
+    this.OnClick = this.OnClick.bind(this);
+
   }
 
   //Ciclo de vida; le dice al fetch que se active cuando todo este montado
@@ -43,9 +47,13 @@ export class App extends React.Component {
 //primera funcion para el boton NEXT
   PlayMusicNext() {
     
-    this.setState({ selection: this.state.selection + 1, reproducir:true })
+    if(this.state.selection>=0){
+      this.setState({ selection: this.state.selection + 1})
     this.mySong.current.load()
     this.mySong.current.play()
+    }else{
+      this.mySong.current.load()
+    }
     //this.PlayMusic(); 
   }
 
@@ -67,6 +75,20 @@ export class App extends React.Component {
     this.setState({ selection: this.state.selection - 1 })
   }
 
+  OnClick(i){
+    this.setState({ selection: i })
+    if (this.state.selection===i)
+    {
+      this.setState({
+        trselected:true
+      })
+    } else {
+      this.setState({
+        trselected:false
+    })
+    alert(this.state.trselected)    
+  }
+}
   //comienza el render principal
   render() {
     return (
@@ -93,7 +115,7 @@ export class App extends React.Component {
               </tr>
             </thead>
             <tbody>
-              <Player players={this.state.player} selected={this.state.selection} />
+              <Player clicked={this.OnClick} players={this.state.player} selected={this.state.selection} />
             </tbody>
           </table>
         </div>

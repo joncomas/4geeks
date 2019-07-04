@@ -33,4 +33,6 @@ body {
 .peo {
   text-align: center;
 }
-
+table tbody :hover {
+    background-color: lightgray;
+  }

@@ -15,7 +15,7 @@ export class Player extends React.Component {
         return this.props.players.map((player,i) => (
             
             
-                <tr className={(this.props.selected===i?'selected':"")} key={i} >
+                <tr onClick={()=>{this.props.clicked(i)}} id={i} className={(this.props.selected===i?'selected':"")} key={i} >
                     <td>{i}</td>
                     <td>{player.name}</td>
                     <td>{player.category}</td>
